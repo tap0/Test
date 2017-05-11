@@ -1,0 +1,65 @@
+/* base scss */
+
+body {
+	font: 100%/1.5 Cambria, Garamond, Georgia, Times, serif;
+	color: #333;
+}
+a { 
+	text-decoration:none; 
+	color:$link;
+	-webkit-tap-highlight-color: $link;
+}
+a:hover {
+	color: $hover;
+}
+::selection { 
+	background:$link; 
+	color:#fff; 
+	text-shadow: none; 
+}
+img, iframe {
+	width: 100%;
+}
+p {
+	margin: 12px 0;
+}
+h2 {
+	margin-bottom: 12px;
+	padding-bottom: 6px;
+	font-size: 24px;
+	letter-spacing: -1px;
+}
+
+h3, h4 {
+	font-size: 16px;
+	line-height: 1.25;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

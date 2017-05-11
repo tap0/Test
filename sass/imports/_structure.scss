@@ -1,0 +1,68 @@
+/* structure scss */
+
+.secondary {
+	background: $lt-yellow;
+	border:1px solid $dk-yellow;
+	padding:1em;
+}
+
+section {
+	margin: 0 24px;
+	margin-bottom: 24px; 
+	display: grid;
+	grid-template-columns: 100%;
+	@media(min-width: $break-med){
+		max-width: $max-width;
+		margin: 0 auto;
+		margin-bottom: 24px;
+		grid-template-columns: 60% 37%;
+		grid-column-gap: 3%;
+	}
+}
+
+footer {
+	margin-top: 40px;
+	padding-top: 40px;
+	background-color: $link;
+	min-height: 320px;
+	.content {
+		display: grid;
+		grid-template-columns: 60% 17% 17%;
+		grid-column-gap: 3%;
+		max-width: $max-width;
+		margin: 0 auto;
+		color: #fff;
+		a {
+			color: #fff;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+/* navigation scss */
+
+nav {
+		ul {
+		// display: none;
+		transform: translateY(-200px);
+		max-height: 1px;
+		opacity: 0;
+		transition: all .3s;
+		background: $light-gray;
+		@media (min-width: $break-sm){
+			display: flex;
+			justify-content: space-between;
+			background: $link;
+			text-align: center;
+			transform: translateY(0);
+			max-height: 1000px;
+			opacity: 1;
+		}
+		a {
+			@media (min-width: $break-sm){
+				color: #fff;
+			}
+		}
+		li {
+			padding: 4px 2px 4px 8px;
+			border-bottom: 1px solid rgba(255,255,255,0.25);
+			@media (min-width: $break-sm){
+				padding: 0.5rem;
+				border-bottom: none;
+				flex-grow: 1;
+			}
+			&:hover {
+				background: $text;
+
+				a {
+					color: #fff;
+					display: inline-block;
+					width: 100%;
+
+				}  
+			}
+		}
+	}
+	
+
+	a#pull {
+		position: relative;
+		z-index: 20;
+		display: block;
+		display: block;
+		background-color: $link;
+		height: 32px;
+		padding-top: 12px;
+		padding-left: 12px;
+		@media (min-width: $break-sm) {
+			display: none;
+		}
+	}
+
+	a#pull:after {
+		content:"";
+		background: url(../img/nav-icon.png) no-repeat;
+		background-size: cover; 
+		width: 22px;
+		height: 22px;
+		color: #fff;
+		display: inline-block;
+	}
+}
+
+.show { 
+	transform: translateY(0);
+	max-height: 1000px;
+	opacity: 1;
+	transition: all .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

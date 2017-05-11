@@ -1,0 +1,18 @@
+/* video */
+
+.btn-list {
+	padding: 6px;
+	display: flex;
+	li {
+		margin-right: 18px;
+		margin-bottom: 16px;
+	}
+	.active {
+		border-radius: $radius;
+		background: $link;
+		color: #fff;
+		padding: 0.5rem;
+	}
+}
+
+

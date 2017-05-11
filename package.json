@@ -1,0 +1,28 @@
+{
+  "name": "session8",
+  "version": "1.0.0",
+  "description": "## Homework",
+  "main": "index.js",
+  "scripts": {
+    "sassy": "node-sass --watch sass --output app/css --source-map true  2>&1 | build-error-notifier",
+    "start": "browser-sync start --server app --files app ",
+    "boom!": "concurrently \"npm run start\" \"npm run sassy\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/front-end-foundations/session8.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/front-end-foundations/session8/issues"
+  },
+  "homepage": "https://github.com/front-end-foundations/session8#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "build-error-notifier": "^1.0.0",
+    "concurrently": "^3.4.0",
+    "node-sass": "^4.5.2"
+  }
+}
