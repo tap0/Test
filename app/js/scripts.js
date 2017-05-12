@@ -30,7 +30,7 @@ videoLinksArray.forEach(
 	videoLink => videoLink.addEventListener('click', selectVideo ))
 
 function selectVideo(){
-	removeActiveClass()
+	removeActiveClass('video')
 	const videoToPlay = this.getAttribute('href')
 	iFrame.setAttribute('src', videoToPlay)
 	this.classList.add('active')
@@ -38,9 +38,11 @@ function selectVideo(){
 	event.preventDefault()
 }
 
+/*
 function removeActiveClass(){
 	videoLinksArray.forEach( videoLink => videoLink.classList.remove('active'))
 }
+*/
 
 
 
@@ -57,16 +59,18 @@ subnavLinksArray.forEach( subnavLink => subnavLink.addEventListener('click', ope
 subnavLinksArray[0].nextElementSibling.classList.add('active')
 
 function openAccordion(){
-	removeActiveClass()
+	removeActiveClass('accordion')
 	this.nextElementSibling.classList.toggle('active')
 	event.preventDefault()
 }
 
-function removeActiveClass(){
-	subnavLinksArray.forEach( subnavLink => subnavLink.nextElementSibling.classList.remove('active'))
+function removeActiveClass(locale){
+    if (locale === 'accordion') {
+        subnavLinksArray.forEach( subnavLink => subnavLink.nextElementSibling.classList.remove('active'))
+    } else if (locale === 'video') {
+        videoLinksArray.forEach( videoLink => videoLink.classList.remove('active'))
+    }
 }
-
-
 
 
 

@@ -1,6 +1,9 @@
 /* navigation scss */
 
 nav {
+	
+	position: fixed;
+	width: 100%;
 		ul {
 		// display: none;
 		transform: translateY(-200px);
